@@ -26,8 +26,24 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: darkslategray;
+    position: relative;
+    overflow: hidden;
+}
+
+.App-bg {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    left: -5%;
+    top: -5%;
     background-image: url('img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(8px);
+    z-index: 1;
+}
+
+.App-fg {
+    position: relative;
+    z-index: 2;
 }
